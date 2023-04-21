@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Courier New", Courier, monospace;
+    flex-direction: column;
+}
+main a {
+    padding: 10px 20px;
+    background-color: #333;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    height: max-content;
+}
+main a:hover {
+    background-color: #e9e9e9;
+    transition: 0.3s;
+    border: 1px solid #000;
+    color: #000;
+}
+body {
+    background-color: #ededed;
+}
+
+h1 {
+    font-size: 3rem;
+    padding-bottom: 3rem;
+}
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 2rem;
+}
+#email,
+#password {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 1px 1px 4px #000;
+}
+.btn {
+    width: 50%;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 1px 1px 4px #000;
+}
+.btn:hover {
+    background-color: #e9e9e9;
+    transition: 0.3s;
+    border: 1px solid #000;
+    color: #000;
+}
+.form {
+    width: 30%;
+}
+form div {
+    margin-bottom: 20px;
+}
+
+.error {
+    display: block;
+    color: darkred;
+    margin-top: 8px;
+}
+
+.sucess {
+    border: 1px solid darkgreen !important;
+    box-shadow: 1px 1px 8px darkolivegreen !important;
+}
+.error-input {
+    border: 1px solid darkred !important;
+    box-shadow: 1px 1px 8px crimson !important;
+}
+.sucess-create {
+    background-color: forestgreen;
+    font-weight: bold;
+    color: #fff;
+    font-family: "Courier New", Courier, monospace;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 8px darkgreen;
+    animation: slideLeft 1s;
+    margin: 20px;
+    height: max-content;
+}
+
+@media (max-width: 720px) {
+    h1 {
+        font-size: 2rem;
+        width: 100%;
+        padding-left: 20px;
+    }
+    .form {
+        width: 80%;
+    }
+    .form label {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    .error {
+        font-size: 12px;
+        margin-top: 15px;
+    }
+    .btn {
+        font-size: 12px;
+        width: 100%;
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translate3d(-129px, 0, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}

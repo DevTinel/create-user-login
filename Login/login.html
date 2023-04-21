@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulario</title>
+        <link rel="stylesheet" href="./index.css" />
+        <script type="module" src="./js/index.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <a href="../Home/home.html">voltar</a>
+            <h1>Faça o Login</h1>
+            <span id="sucess-create"></span>
+
+            <div class="form">
+                <form>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" />
+                        <span id="error-email"></span>
+                    </div>
+                    <div>
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" />
+                        <span id="error-password"></span>
+                    </div>
+                    <span class="error" id="error"></span>
+                    <button class="btn">Login</button>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
